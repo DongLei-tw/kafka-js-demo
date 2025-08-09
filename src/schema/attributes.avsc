@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "AttributesV1",
+  "namespace": "com.property.conformed",
+  "doc": "Property Attributes record.",
+  "fields": [
+    {
+      "name": "propertyId",
+      "type": "int",
+      "doc": "The unique identifier for the property."
+    },
+    {
+      "name": "bedrooms",
+      "type": [
+        "null",
+        "int"
+      ],
+      "doc": "The details of the bedrooms.",
+      "default": null
+    },
+    {
+      "name": "livingArea",
+      "type": [
+        "null",
+        "float"
+      ],
+      "doc": "The details of the livingArea.",
+      "default": null
+    }
+  ]
+}

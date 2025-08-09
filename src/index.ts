@@ -1,5 +1,11 @@
-const greet = (name: string) => {
-    console.log(`Hello, ${name}!`);
-  }
+import runProducer from "./producer";
+import runConsumer from "./consumer";
 
-greet("World");
+const run = async () => {
+  // produce the message with float value
+  await runProducer();
+  // consumer the message and print the decoded float value
+  await runConsumer();
+};
+
+run();
