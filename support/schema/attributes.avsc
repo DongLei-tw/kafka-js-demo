@@ -26,6 +26,15 @@
       ],
       "doc": "The details of the livingArea.",
       "default": null
+    },
+    {
+      "name": "buildingArea",
+      "type": [
+        "null",
+        "double"
+      ],
+      "doc": "The details of the buildingArea.",
+      "default": null
     }
   ]
 }

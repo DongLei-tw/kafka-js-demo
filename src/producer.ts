@@ -33,6 +33,7 @@ const run = async (role: string) => {
     propertyId: 1,
     bedrooms: 2,
     livingArea: 123.45,
+    buildingArea: 123.45,
   };
 
   const encodedMessage = await encodeAvro(

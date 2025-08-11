@@ -9,6 +9,7 @@
     "dev": "ts-node src/index.ts",
     "producer": "ts-node src/producer.ts",
     "consumer": "ts-node src/consumer.ts",
+    "avro-test": "ts-node src/avro-js-demo.ts",
     "watch": "npx tsc --watch",
     "clean": "rm -rf dist && npm run build"
   },
@@ -26,6 +27,7 @@
   },
   "dependencies": {
     "@kafkajs/confluent-schema-registry": "^3.9.0",
+    "avro-js": "^1.12.0",
     "kafkajs": "^2.2.4"
   }
 }
