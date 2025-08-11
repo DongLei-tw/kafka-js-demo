@@ -6,7 +6,7 @@ import { Kafka } from "kafkajs";
 import * as path from "path";
 
 const brokerServer = "localhost:39092";
-const schemaRegistryHost = "http://schema-registry:8081";
+const schemaRegistryHost = "http://localhost:8081";
 const topicName = "events.property.conformed.attributes.v1";
 
 const run = async (role: string) => {
