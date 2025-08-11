@@ -79,3 +79,7 @@ Producer sends a message with `livingArea: 123.45` (two digits).
 
 However, after the consumer read and decode the message, the livingArea drifted a bit to `123.44999694824219`.
 
+
+---
+
+Resolved, after use `double` type instead of `float` the value drifting issue is gone.
