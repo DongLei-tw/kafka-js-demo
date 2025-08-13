@@ -1,5 +1,6 @@
 package org.example;
 
+import org.apache.avro.LogicalTypes;
 import org.apache.avro.Schema;
 import org.apache.avro.generic.GenericData;
 import org.apache.avro.generic.GenericDatumReader;
@@ -15,6 +16,11 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello, World!");
+
+        float a = 16777216f;
+        System.out.printf("a: %f%n", a);
+        System.out.printf("a + 1: %f%n", a + 1);
+
 
         // Avro Schema
         String schemaJson = "{"
@@ -37,8 +43,8 @@ public class Main {
         GenericData.Record pet = new GenericData.Record(schema);
         pet.put("kind", new GenericData.EnumSymbol(schema.getField("kind").schema(), "CAT"));
         pet.put("name", "Albert");
-        pet.put("height", 123.45f);
-        pet.put("length", 123.45f);
+        pet.put("height", 1.23f);
+        pet.put("length", 1.23f);
 
         // ===== Encode =====
         ByteArrayOutputStream out = new ByteArrayOutputStream();

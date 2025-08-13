@@ -34,12 +34,42 @@
       "preLaunchTask": "tsc: build",
       "sourceMaps": true
     },
-     {
+    {
       "type": "node",
       "request": "launch",
       "name": "Debug avsc-js",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/src/avsc-js-demo.ts",
+      "outFiles": ["${workspaceFolder}/**/*.js"],
+      "preLaunchTask": "tsc: build",
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug decimal",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/avsc-js-decimal.ts",
+      "outFiles": ["${workspaceFolder}/**/*.js"],
+      "preLaunchTask": "tsc: build",
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug debug-java-js-demo",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/avsc-java-js-demo.ts",
+      "outFiles": ["${workspaceFolder}/**/*.js"],
+      "preLaunchTask": "tsc: build",
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug consumer-java-to-js",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/consumer-java-to-js.ts",
       "outFiles": ["${workspaceFolder}/**/*.js"],
       "preLaunchTask": "tsc: build",
       "sourceMaps": true
