@@ -82,4 +82,5 @@ However, after the consumer read and decode the message, the livingArea drifted 
 
 ---
 
-Resolved, after use `double` type instead of `float` the value drifting issue is gone.
+Whenever we want to have a fixed digits number and involving schemas (avor / protoful / ect) we should use `decimal` instead of `float` / `double`.
+
